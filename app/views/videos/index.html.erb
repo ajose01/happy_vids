@@ -1,5 +1,6 @@
 <h1>Our happy collection of videos</h1>
 <div class="table-responsive">
+  <%= will_paginate @videos %>
   <table class="table table-condensed">
     <%= render partial: "layouts/index_table_head", locals: { columns: @table_columns } %>
     <%= render partial: "layouts/index_videos", locals: { videos: @videos } %>

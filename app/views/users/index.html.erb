@@ -1,5 +1,6 @@
-<h1>Our happy vid users</h1>
+<h1>Our happy users</h1>
 <div class="table-responsive">
+  <%= will_paginate @users %>
   <table class="table table-condensed">
     <%= render partial: "layouts/index_table_head", locals: { columns: @table_columns } %>
     <%= render partial: "layouts/index_users", locals: { users: @users } %>
