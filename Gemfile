@@ -17,7 +17,7 @@ group :development, :test do
   gem 'rspec', '2.14.1'
   gem 'rspec-rails'
   gem 'ffaker'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', require: false
   gem 'sqlite3'
 end
 
