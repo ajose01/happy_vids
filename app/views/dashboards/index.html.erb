@@ -1,0 +1,13 @@
+
+<h1>Welcome to our happy video library</h1>
+
+<h2>Our current videos available</h2>
+
+<% @video_counts.each do |video| %>
+  <ul>
+    <li><%= link_to video[:id], video_path(video[:id]) %></li>
+    <li>Title: <%= video[:title] %></li>
+    <li>Watched by <%= video[:user_count] %> users!</li>
+  </ul>
+
+<% end %>
