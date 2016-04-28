@@ -1,0 +1,10 @@
+<tbody>
+  <% videos.each do |video| %>
+    <tr>
+      <td><%= link_to video.id, video %></td>
+      <td><%= video.title %></td>
+      <td><%= video.created_at %></td>
+      <td><%= video.updated_at %></td>
+    </tr>
+  <% end %>
+</tbody>
