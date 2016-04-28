@@ -1,0 +1,7 @@
+<h1>Video details</h1>
+<%= render partial: "layouts/video_details", locals: { video: @video } %>
+<h2>Users with video:</h2>
+<%= will_paginate @video_users %>
+<% @video_users.each do |user| %>
+  <%= render partial: "layouts/user_details", locals: { user: user } %>
+<% end %>

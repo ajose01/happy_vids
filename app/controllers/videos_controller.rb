@@ -7,6 +7,7 @@ class VideosController < ApplicationController
 
   def show
     @video = Video.find(params[:id])
+    @video_users = @video.users.paginate(page: params[:page], per_page: 10)
   end
 
 end
